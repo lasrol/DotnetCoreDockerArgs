@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace TestDocker
 {
@@ -6,7 +7,11 @@ namespace TestDocker
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello Args!");
+            foreach (var arg in args)
+            {
+                Console.WriteLine($"Arg: {arg}");
+            }
         }
     }
 }

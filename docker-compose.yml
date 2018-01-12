@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  testdocker:
+    image: testdocker
+    build:
+      context: .
+      dockerfile: TestDocker\Dockerfile
+      args: 
+        arg1: somethin
+        arg2: somehting
